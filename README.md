@@ -1,2 +1,2 @@
  as
-all code available
+all code avails
