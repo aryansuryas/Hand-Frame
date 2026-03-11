@@ -1,1 +1,1 @@
-# ALL CODES AND Projects 🏗️
+# ALL Codes & Projects 🏗️
