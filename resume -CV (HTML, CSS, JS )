@@ -1,23 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aryan Surya S - Resume</title>
-    <style>
-        /* --- GENERAL STYLES --- */
-        :root {
-            --primary-black: #000000;
-            --dark-gray: #333333;
-            --light-gray: #666666;
-            --paper
-            --body-bg: #e0e0e0;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--body-bg);
-            background-image: radial-gradient(#aaa 1px, transparent 1px);
+<-gradient(#aaa 1px, transparent 1px);
             background-size: 20px 20px;
             margin: 0;
             padding: 40px 0;
