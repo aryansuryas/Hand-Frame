@@ -10,7 +10,7 @@
             --primary-black: #000000;
             --dark-gray: #333333;
             --light-gray: #666666;
-            --paper-bg: #ffffff;
+            --paper
             --body-bg: #e0e0e0;
         }
 
