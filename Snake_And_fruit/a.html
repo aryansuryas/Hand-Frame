@@ -1,73 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Neon Snake Arcade</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js" integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 
-  <style>
-    :root {
-      --bg-color: #111;
-      --screen-bg: #0d0d16; 
-      --neon-blue: #00f3ff;
-      --neon-pink: #ff00ff;
-      --neon-green: #0aff00;
-      --text-color: #e0e0e0;
     }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; user-select: none; }
-
-    body {
-      height: 100vh;
-      width: 100vw;
-      background-color: var(--bg-color);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Orbitron', sans-serif;
-      color: var(--text-color);
-      overflow: hidden;
-    }
-
-    .arcade-machine {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      border: 2px solid #333;
-      border-radius: 10px;
-      background: #1a1a1a;
-      box-shadow: 0 0 50px rgba(0, 0, 0, 0.8), inset 0 0 20px rgba(0,0,0,0.5);
-    }
-
-    /* CRT Screen Effect */
-    .screen-container {
-      position: relative;
-      border: 4px solid #444;
-      border-radius: 4px;
-      box-shadow: 0 0 15px var(--neon-blue);
-      overflow: hidden;
-    }
-
-    canvas {
-      background-color: var(--screen-bg);
-      display: block;
-      /* Subtle scanline texture via CSS pattern */
-      background-image: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+near-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
       background-size: 100% 2px, 3px 100%;
     }
 
     /* CRT Flicker Animation */
     .scanlines {
       position: absolute;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2));
-      background-size: 100% 4px;
-      pointer-events: none;
       z-index: 10;
       animation: flicker 0.15s infinite;
       opacity: 0.3;
