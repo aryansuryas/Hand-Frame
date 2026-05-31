@@ -1,47 +1,5 @@
 
-  // Draw Snake (Interpolation could be added here for smoother visual movement, keeping grid snap for now)
-  snake.draw();
+
+
 }
-
-function gameOver() {
-  isGameOver = true;
-  cancelAnimationFrame(requestID);
-  dom_overlay.classList.add('visible');
-  dom_replay.innerHTML = '<i class="fas fa-redo"></i> TRY AGAIN';
-}
-
-function reset() {
-  isGameOver = false;
-  score = 0;
-  dom_score.innerText = "00";
-  dom_overlay.classList.remove('visible');
-  dom_replay.innerHTML = '<i class="fas fa-pause"></i> RUNNING';
-  
-  KEY.reset();
-  snake = new Snake();
-  food = new Food();
-  particles = [];
-  
-  lastTime = performance.now();
-  loop(lastTime);
-}
-
-// --- INITIALIZATION ---
-
-KEY.listen();
-dom_replay.addEventListener("click", reset);
-
-// Initial draw to show something before start
-CTX.fillStyle = "#111";
-CTX.fillRect(0,0,W,H);
-helpers.drawGrid();
-CTX.fillStyle = "#444";
-CTX.font = "20px Orbitron";
-CTX.textAlign = "center";
-CTX.fillText("PRESS START", W/2, H/2);
-
-</script>
-</body>
-
-</html>
 
