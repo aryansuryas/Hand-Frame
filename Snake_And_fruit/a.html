@@ -1,45 +1,6 @@
-x;0 20px var(-
-    #game-over-overlay {
-      position: absolute;
-      top: 50%; left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      display: none;
-      z-index: 20;
-      pointer-events: none; /* Let clicks pass through to canvas if needed, mostly for visual */
-    }
-    
-    #game-over-overlay.visible { display: block; }
 
-    .go-text {
-      font-size: 40px;
-      font-weight: 900;
-      color: var(--neon-pink);
-      text-shadow: 0 0 10px var(--neon-pink), 2px 2px 0px #fff;
-      margin-bottom: 10px;
-      animation: pulseText 1s infinite alternate;
-    }
 
-    @keyframes pulseText {
-      from { text-shadow: 0 0 10px var(--neon-pink); transform: scale(1); }
-      to { text-shadow: 0 0 20px var(--neon-pink), 0 0 30px var(--neon-pink); transform: scale(1.05); }
-    }
 
-  </style>
-</head>
-<body>
-
-  <div class="arcade-machine">
-    
-    <div class="ui-layer">
-      <div class="stat-box">
-        <span class="label">SCORE</span>
-        <span class="value" id="score">00</span>
-      </div>
-      <div class="stat-box">
-        <span class="label">HIGH SCORE</span>
-        <span class="value" id="max-score">00</span>
-      </div>
     </div>
 
     <div class="screen-container">
