@@ -1,37 +1,8 @@
 //  identify the code verification
 <HTML>
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Validation</title>
-    <style>
-        input {
-            width: 100%;
-            background: transparent;
-            border: none;
-            outline: none;
-            font-size: 16px;
-            padding: 10px; /* Improves usability */
-        }
 
-        .box {
-            border: 2px solid #ccc; /* Default border */
-            padding: 10px;
-            border-radius: 4px;
-            transition: border-color 0.3s ease; /* Smooth color change */
-        }
-
-        .field:has(input:invalid:not(:placeholder-shown)) .box {
-            border-color: red;
-        }
-
-        .field:has(input:invalid:not(:placeholder-shown)) .error {
-            display: block;
-            color: red;
-            font-size: 14px;
-            margin-top: 5px;
+            borde
         }
     .field:has(input:valid:not(:placeholder-shown)) .box {
             border-color: rgb(28, 243, 0);
