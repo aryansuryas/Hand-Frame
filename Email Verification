@@ -45,12 +45,7 @@
         }
 
         .error, .success {
-            display: none;
-        }
-    </style>
-</head>
-<body>
-    <form novalidate>
+    
         <div class="field">
             <div class="box">
                 <input type="email" required placeholder="Email Address">
