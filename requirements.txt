@@ -1,0 +1,4 @@
+opencv-python>=4.10,<4.11
+# 0.10.30 is the newest release available from the package index that still supports the legacy API used here.
+mediapipe==0.10.30
+numpy>=2.0,<3.0
